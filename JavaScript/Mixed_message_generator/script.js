@@ -24,8 +24,34 @@ const data = {
     "Roses are red, violets are blue, Sugar is sweet, and so are you.",
   ],
   get mood() {
-    return this._mood[randNumber(this._mood.length - 1)];
+    return this._mood[randNumber(this._mood.length)];
+  },
+  get activity() {
+    return this._activity[randNumber(this._activity.length)];
+  },
+  get song() {
+    return this._song[randNumber(this._song.length)];
+  },
+  get joke() {
+    return this._joke[randNumber(this._joke.length)];
+  },
+  get poem() {
+    return this._poem[randNumber(this._poem.length)];
   },
 };
 
-console.log(data.mood);
+const messegae = (data) => {
+  const mood = data.mood;
+  const activity = data.activity;
+  console.log(`You are feeling ${mood} today.`);
+  console.log(`You can listen to ${activity} today.`);
+  if (activity === "song") {
+    console.log(`Here is a song for you: ${data.song}`);
+  } else if (activity === "joke") {
+    console.log(`Here is a joke for you: ${data.joke}`);
+  } else if (activity === "poem") {
+    console.log(`Here is a poem for you: ${data.poem}`);
+  }
+};
+
+messegae(data);
