@@ -1,5 +1,8 @@
 console.log("Welcome to mood message generator");
-const dat = {
+const randNumber = (rand) => {
+  return Math.floor(Math.random() * rand - 1);
+};
+const data = {
   _mood: ["happy", "sad", "angry"],
   _activity: ["joke", "poem", "song"],
   _song: [
@@ -20,6 +23,9 @@ const dat = {
     "Nature's lullaby gently sings, As the moon its light it brings, Dreams dance in the silent space, where worries vanish without trace",
     "Roses are red, violets are blue, Sugar is sweet, and so are you.",
   ],
+  get mood() {
+    return this._mood[randNumber(this._mood.length)];
+  },
 };
 
-console.log(dat._song);
+console.log(data.mood);
