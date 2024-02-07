@@ -2,7 +2,7 @@
 
 In this project i will be building a random message generator program. everytime a user runs the program they will get a message.
 
-## prjce objectives
+## prject objectives
 
 - using JS
 - using git version control
