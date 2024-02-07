@@ -1,6 +1,6 @@
 console.log("Welcome to mood message generator");
 const randNumber = (rand) => {
-  return Math.floor(Math.random() * rand - 1);
+  return Math.floor(Math.random() * rand);
 };
 const data = {
   _mood: ["happy", "sad", "angry"],
@@ -24,7 +24,7 @@ const data = {
     "Roses are red, violets are blue, Sugar is sweet, and so are you.",
   ],
   get mood() {
-    return this._mood[randNumber(this._mood.length)];
+    return this._mood[randNumber(this._mood.length - 1)];
   },
 };
 
