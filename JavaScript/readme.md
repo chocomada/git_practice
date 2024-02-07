@@ -1,7 +1,7 @@
 # Js projects
 
-Here aer most of the Js projects that i Have done in my carrer
+Here are most of the Js projects that i Have done in my carrer
 
-## all prjects
+## Beginner project
 
-1. prject 1 => Mixed message generator
+1. project 1 => Mixed message generator
